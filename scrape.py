@@ -25,14 +25,14 @@ html_doc = """
 
 soup = BeautifulSoup(html_doc,'html.parser')
 
-# d = soup.find_all("div")
+d = soup.find_all("div")
 # d = soup.find(id="first")
 # d = soup.find_all(class_="special")
 # d = soup.select(".special")
-# print(d)
+print(d)
 
-for el in soup.select(".special"):
-    print(el.name)
-    print(el.attrs)  
+# for el in soup.select(".special"):
+#     print(el.name)
+#     print(el.attrs )  
 
 
